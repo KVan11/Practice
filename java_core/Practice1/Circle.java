@@ -8,18 +8,16 @@ public class Circle extends Shape {
         this.radius = radius;
     }
 
-    @Override
     public double getArea() {
         return Math.PI*radius*radius;
     }
 
-    @Override
-    public double getPerimeter() {
+    public double getCircumference() {
         return 2*Math.PI*radius;
     }
 
     @Override
     public void displayInfo() {
-        System.out.println("hinh tron co ban kinh: " + radius + ", dien tich: " + getArea() + ", chu vi: " + getPerimeter());
+        System.out.println("Hinh tron co ban kinh: " + radius + ", dien tich: " + getArea() + ", chu vi: " + getCircumference());
     }
 }
